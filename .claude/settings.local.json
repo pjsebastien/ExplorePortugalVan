@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm:*)",
+      "Bash(node --version:*)",
+      "Bash(test:*)",
+      "Bash(echo:*)",
+      "Bash(tee:*)",
+      "Bash(for f in *.jpg)",
+      "Bash(do echo \"$f\")",
+      "Bash(done)",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''src/app'' -Recurse -Filter ''*.tsx'' | ForEach-Object { \\(Get-Content $_FullName\\) -replace '' href=\"\"#\"\"'', '''' | Set-Content $_FullName }\")"
+    ]
+  }
+}
