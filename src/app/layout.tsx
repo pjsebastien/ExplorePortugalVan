@@ -3,7 +3,7 @@ import { Header, Footer, CookieBanner, FloatingCTA } from "@/components";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://exploreportugalvan.com'),
+  metadataBase: new URL('https://www.exploreportugalvan.com'),
   title: {
     default: "Location van Portugal | Guide complet & meilleurs prix 2025",
     template: "%s | ExplorePortugalVan",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://exploreportugalvan.com",
+    url: "https://www.exploreportugalvan.com",
     siteName: "ExplorePortugalVan",
     title: "Location Van Portugal | Guide Complet & Meilleurs Prix 2025",
     description: "Louez un van aménagé au Portugal. Guide complet : itinéraires, prix, conseils pratiques et meilleures offres de location de van pour votre road trip.",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://exploreportugalvan.com",
+    canonical: "https://www.exploreportugalvan.com",
   },
 };
 
