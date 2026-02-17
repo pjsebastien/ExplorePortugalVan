@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Road Trip Portugal en Van - Guide Complet 2025",
-  description: "Planifiez votre road trip au Portugal en van aménagé. Itinéraires, spots incontournables, conseils pratiques pour une aventure réussie.",
+  title: "Road trip Portugal en van | Itinéraires et spots incontournables",
+  description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires, spots secrets, routes côtières et conseils de vanlifers pour une aventure inoubliable.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/road-trip-portugal-van",
+    canonical: "https://www.exploreportugalvan.com/road-trip-portugal-van",
   },
 };
 
@@ -28,7 +28,7 @@ export default function RoadTripPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Road Trip Portugal en Van
+                Road trip au Portugal en van
               </h1>
               <p className="text-lg text-ocean-100 mb-6">
                 Des falaises de l&apos;Algarve aux vignobles du Douro, planifiez votre aventure sur les plus

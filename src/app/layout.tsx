@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.exploreportugalvan.com'),
   title: {
-    default: "Location van Portugal | Guide complet & meilleurs prix 2025",
+    default: "Location van Portugal | Comparez et réservez votre van aménagé",
     template: "%s | ExplorePortugalVan",
   },
   icons: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     shortcut: '/images/favicon.png',
     apple: '/images/favicon.png',
   },
-  description: "Louez un van aménagé au Portugal. Guide complet : itinéraires, prix, conseils pratiques et meilleures offres de location de van pour votre road trip.",
+  description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs, itinéraires et astuces pour votre road trip sur la côte atlantique.",
   keywords: ["location van Portugal", "van aménagé Portugal", "road trip Portugal", "louer van Portugal", "vanlife Portugal"],
   authors: [{ name: "ExplorePortugalVan" }],
   creator: "ExplorePortugalVan",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://www.exploreportugalvan.com",
     siteName: "ExplorePortugalVan",
-    title: "Location Van Portugal | Guide Complet & Meilleurs Prix 2025",
-    description: "Louez un van aménagé au Portugal. Guide complet : itinéraires, prix, conseils pratiques et meilleures offres de location de van pour votre road trip.",
+    title: "Location van Portugal | Comparez et réservez votre van aménagé",
+    description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Location Van Portugal | Guide Complet & Meilleurs Prix 2025",
-    description: "Louez un van aménagé au Portugal. Guide complet : itinéraires, prix, conseils pratiques et meilleures offres de location.",
+    title: "Location van Portugal | Comparez et réservez votre van aménagé",
+    description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
     images: ["/images/og-image.jpg"],
   },
   robots: {

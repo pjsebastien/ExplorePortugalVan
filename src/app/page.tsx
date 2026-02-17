@@ -4,23 +4,23 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location Van Portugal - Guide Complet Road Trip 2025",
-  description: "Louez un van aménagé au Portugal : comparez les prix, découvrez les meilleurs itinéraires et conseils pratiques pour votre road trip.",
+  title: "Location van Portugal | Comparez et réservez votre van aménagé",
+  description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs, itinéraires et astuces pour votre road trip sur la côte atlantique.",
   alternates: {
-    canonical: "https://exploreportugalvan.com",
+    canonical: "https://www.exploreportugalvan.com",
   },
 };
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Louer un van aménagé au Portugal - Guide Complet",
-  "description": "Guide complet pour la location de van au Portugal. Itinéraires, prix, conseils et astuces pour votre road trip en van aménagé.",
+  "headline": "Location de van au Portugal",
+  "description": "Louez un van aménagé au Portugal. Comparatif des loueurs, tarifs, itinéraires et astuces pour votre road trip sur la côte atlantique.",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
   "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
   "datePublished": "2024-01-15",
   "dateModified": "2025-01-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://exploreportugalvan.com" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com" }
 };
 
 export default function HomePage() {
@@ -38,7 +38,7 @@ export default function HomePage() {
             <div>
               <p className="text-ocean-200 font-medium mb-3">Votre aventure commence ici</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
-                Louer un van aménagé au Portugal
+                Location de van au Portugal
               </h1>
               <p className="text-lg text-ocean-100 mb-8 leading-relaxed">
                 Explorez les falaises dorées de l&apos;Algarve, surfez sur la côte atlantique et découvrez

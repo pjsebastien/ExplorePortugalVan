@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Prix Location Van Portugal 2025 - Tarifs et Budget Complet",
-  description: "Prix de location de van au Portugal en 2025. Comparatif des tarifs par saison, type de véhicule, assurances et budget total pour votre road trip.",
+  title: "Prix location van Portugal | Tarifs, comparatif et budget",
+  description: "Combien coûte la location d'un van au Portugal ? Comparatif des tarifs par saison, type de véhicule et astuces pour économiser sur votre road trip.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/prix-location-van-portugal",
+    canonical: "https://www.exploreportugalvan.com/prix-location-van-portugal",
   },
 };
 
@@ -27,10 +27,10 @@ export default function PrixPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Prix Location Van Portugal
+                Prix de la location de van au Portugal
               </h1>
               <p className="text-lg text-nature-100 mb-6">
-                Tarifs 2025, budget complet et conseils pour économiser. Comparez les prix selon la saison,
+                Tarifs actuels, budget détaillé et conseils pour économiser. Comparez les prix selon la saison,
                 le type de véhicule et la durée de location pour planifier votre
                 <InternalLink href="/road-trip-portugal-van" className="text-white underline ml-1">road trip</InternalLink>.
               </p>
@@ -41,7 +41,7 @@ export default function PrixPage() {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-              <h3 className="text-xl font-semibold mb-4">Prix moyens 2025</h3>
+              <h3 className="text-xl font-semibold mb-4">Prix moyens constatés</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center pb-2 border-b border-white/20">
                   <span>Van compact</span>

@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Dormir en Van au Portugal - Aires, Campings et Spots 2025",
-  description: "Où dormir en van au Portugal ? Guide complet des aires officielles, campings, zones autorisées et applications pour trouver les meilleurs spots.",
+  title: "Dormir en van au Portugal | Aires, spots et applications",
+  description: "Où passer la nuit en van au Portugal ? Aires officielles, campings, spots autorisés et meilleures applications pour trouver un endroit légal et sécurisé.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/dormir-en-van-portugal",
+    canonical: "https://www.exploreportugalvan.com/dormir-en-van-portugal",
   },
 };
 
@@ -28,10 +28,10 @@ export default function DormirPage() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             <div className="lg:col-span-3">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Dormir en van au Portugal
+                Où dormir en van au Portugal
               </h1>
               <p className="text-lg text-ocean-100 mb-6">
-                Guide complet des aires officielles, campings et spots pour passer la nuit
+                Aires officielles, campings et spots pour passer la nuit
                 en toute légalité. Applications, bonnes pratiques et conseils.
               </p>
               <div className="grid grid-cols-4 gap-4 mb-6">

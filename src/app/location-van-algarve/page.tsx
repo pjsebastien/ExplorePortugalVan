@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location Van Algarve - Découvrez le Sud du Portugal",
-  description: "Location de van en Algarve : accès depuis Faro, spots incontournables, falaises dorées et plages paradisiaques pour votre road trip dans le sud.",
+  title: "Location van Algarve | Falaises, plages et soleil toute l'année",
+  description: "Louez un van en Algarve depuis Faro et explorez les plus belles plages d'Europe. Falaises dorées, grottes marines et 300 jours de soleil par an.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/location-van-algarve",
+    canonical: "https://www.exploreportugalvan.com/location-van-algarve",
   },
 };
 
@@ -28,7 +28,7 @@ export default function AlgarvePage() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             <div className="lg:col-span-3">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Location van Algarve
+                Location de van en Algarve
               </h1>
               <p className="text-lg text-sand-100 mb-6">
                 Les plus belles plages d&apos;Europe à portée de van. Falaises dorées, grottes marines

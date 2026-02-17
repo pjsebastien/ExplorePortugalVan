@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Itinéraire Portugal 10 Jours en Van - Guide Jour par Jour",
-  description: "Itinéraire complet de 10 jours en van au Portugal. Programme jour par jour, distances, étapes et lieux où dormir pour un road trip réussi.",
+  title: "Itinéraire Portugal 10 jours en van | Du nord au sud, jour par jour",
+  description: "Notre itinéraire de 10 jours au Portugal en van : programme jour par jour, étapes incontournables, distances et spots où dormir de Lisbonne à l'Algarve.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/itineraire-portugal-10-jours-van",
+    canonical: "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van",
   },
 };
 
@@ -41,7 +41,7 @@ export default function ItinerairePage() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             <div className="lg:col-span-3">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Itinéraire Portugal 10 Jours en Van
+                Itinéraire 10 jours au Portugal en van
               </h1>
               <p className="text-lg text-sand-100 mb-6">
                 Le programme parfait pour découvrir les essentiels du Portugal : Lisbonne, Porto, Douro,

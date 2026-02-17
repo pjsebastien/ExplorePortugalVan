@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location Van Porto - Explorez le Nord du Portugal",
-  description: "Location de van à Porto : loueurs, tarifs, accès aéroport et avantages de partir du nord pour découvrir le Douro et la côte atlantique.",
+  title: "Location van Porto | Explorez le Douro et le nord du Portugal",
+  description: "Louez un van aménagé à Porto pour découvrir le nord du Portugal et la vallée du Douro. Comparatif des loueurs, tarifs et accès depuis l'aéroport.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/location-van-porto",
+    canonical: "https://www.exploreportugalvan.com/location-van-porto",
   },
 };
 
@@ -28,7 +28,7 @@ export default function PortoPage() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             <div className="lg:col-span-3">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Location van Porto
+                Location de van à Porto
               </h1>
               <p className="text-lg text-nature-100 mb-6">
                 Découvrez le nord du Portugal et la vallée du Douro depuis la deuxième ville du pays.

@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "FAQ location van Portugal - Questions fréquentes",
-  description: "Toutes les réponses à vos questions sur la location de van au Portugal : permis, assurance, camping, budget, itinéraires et conseils pratiques.",
+  title: "Location van Portugal : toutes vos questions, nos réponses",
+  description: "Permis, assurance, budget, camping, meilleure période... Toutes les réponses à vos questions sur la location de van au Portugal.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/faq-location-van-portugal",
+    canonical: "https://www.exploreportugalvan.com/faq-location-van-portugal",
   },
 };
 
@@ -87,7 +87,7 @@ export default function FAQPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-4">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              Questions fréquentes
+              Questions fréquentes sur la location de van au Portugal
             </h1>
             <p className="text-lg text-ocean-100 mb-6">
               Toutes les réponses à vos questions pour préparer votre
@@ -100,8 +100,8 @@ export default function FAQPage() {
                 <div className="text-sm text-ocean-200">questions</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">2025</div>
-                <div className="text-sm text-ocean-200">mise à jour</div>
+                <div className="text-2xl font-bold">✓</div>
+                <div className="text-sm text-ocean-200">à jour</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold">10+</div>

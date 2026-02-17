@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Camping Sauvage Portugal en Van - Réglementation 2025",
-  description: "Camping sauvage au Portugal en van : réglementation actuelle, amendes, zones interdites et alternatives légales pour dormir dans la nature.",
+  title: "Camping sauvage au Portugal | Loi, amendes et alternatives",
+  description: "Le camping sauvage est-il autorisé au Portugal ? Loi en vigueur, montant des amendes, zones interdites et alternatives légales pour bivouaquer en van.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/camping-sauvage-portugal-van",
+    canonical: "https://www.exploreportugalvan.com/camping-sauvage-portugal-van",
   },
 };
 
@@ -28,10 +28,10 @@ export default function CampingSauvagePage() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             <div className="lg:col-span-3">
               <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-sm mb-4">
-                ⚠️ Réglementation 2025
+                ⚠️ Réglementation en vigueur
               </div>
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Camping sauvage au Portugal
+                Le camping sauvage au Portugal en van
               </h1>
               <p className="text-lg text-red-100 mb-6">
                 Le camping sauvage est officiellement interdit au Portugal. Connaître la réglementation,

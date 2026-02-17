@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location Van Lisbonne - Louez votre Van depuis la Capitale",
-  description: "Location de van à Lisbonne : comparatif des loueurs, accès aéroport, avantages de partir de la capitale portugaise pour votre road trip.",
+  title: "Location van Lisbonne | Loueurs, tarifs et départ aéroport",
+  description: "Louez un van aménagé à Lisbonne : comparatif des loueurs, retrait à l'aéroport et avantages de partir de la capitale pour explorer le Portugal.",
   alternates: {
-    canonical: "https://exploreportugalvan.com/location-van-lisbonne",
+    canonical: "https://www.exploreportugalvan.com/location-van-lisbonne",
   },
 };
 
@@ -28,7 +28,7 @@ export default function LisbonnePage() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             <div className="lg:col-span-3">
               <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-                Location van Lisbonne
+                Location de van à Lisbonne
               </h1>
               <p className="text-lg text-ocean-100 mb-6">
                 Partez à l&apos;aventure depuis la capitale portugaise. Le plus grand choix de vans,
