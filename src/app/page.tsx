@@ -13,10 +13,21 @@ export const metadata: Metadata = {
     title: "Location van Portugal | Comparez et réservez votre van aménagé",
     description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
     url: "https://www.exploreportugalvan.com/",
+    type: "website",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [{
+      url: "/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Location van Portugal - Road trip sur la côte atlantique",
+    }],
   },
   twitter: {
+    card: "summary_large_image",
     title: "Location van Portugal | Comparez et réservez votre van aménagé",
     description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
+    images: ["/images/og-image.jpg"],
   },
 };
 

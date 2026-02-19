@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Location van Lisbonne | Loueurs et départ aéroport",
     description: "Louez un van aménagé à Lisbonne : comparatif des loueurs et retrait à l'aéroport.",
     url: "https://www.exploreportugalvan.com/location-van-lisbonne/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/location-van-lisbonne.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Location de van aménagé à Lisbonne pour explorer le Portugal",
+      },
+    ],
   },
   twitter: {
+    card: "summary_large_image",
     title: "Location van Lisbonne | Loueurs et départ aéroport",
     description: "Louez un van aménagé à Lisbonne : comparatif des loueurs et retrait à l'aéroport.",
+    images: ["https://www.exploreportugalvan.com/images/location-van-lisbonne.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Location van Lisbonne", href: "/location-van-lisbonne" },
+  { name: "Location van Lisbonne", href: "/location-van-lisbonne/" },
 ];
 
 const schemaData = {
@@ -30,10 +43,11 @@ const schemaData = {
   "@type": "Article",
   "headline": "Location de van à Lisbonne",
   "description": "Guide complet pour louer un van aménagé à Lisbonne : loueurs, tarifs et accès depuis l'aéroport.",
+  "image": "https://www.exploreportugalvan.com/images/location-van-lisbonne.jpg",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "datePublished": "2024-08-01",
+  "dateModified": "2025-01-15",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/location-van-lisbonne/" }
 };
 

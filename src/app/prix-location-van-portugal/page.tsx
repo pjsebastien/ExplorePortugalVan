@@ -12,16 +12,29 @@ export const metadata: Metadata = {
     title: "Prix location van Portugal | Tarifs et budget",
     description: "Comparatif des tarifs de location de van au Portugal par saison et type de véhicule.",
     url: "https://www.exploreportugalvan.com/prix-location-van-portugal/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tarifs et budget pour la location de van au Portugal",
+      },
+    ],
   },
   twitter: {
     title: "Prix location van Portugal | Tarifs et budget",
     description: "Comparatif des tarifs de location de van au Portugal par saison et type de véhicule.",
+    card: "summary_large_image",
+    images: ["https://www.exploreportugalvan.com/images/og-image.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Prix location van", href: "/prix-location-van-portugal" },
+  { name: "Prix location van", href: "/prix-location-van-portugal/" },
 ];
 
 const schemaData = {
@@ -30,9 +43,10 @@ const schemaData = {
   "headline": "Prix de la location de van au Portugal",
   "description": "Comparatif des tarifs de location de van au Portugal par saison, type de véhicule et durée.",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "image": "https://www.exploreportugalvan.com/images/og-image.jpg",
+  "datePublished": "2024-07-01",
+  "dateModified": "2025-02-05",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/prix-location-van-portugal/" }
 };
 

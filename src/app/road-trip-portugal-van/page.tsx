@@ -5,7 +5,7 @@ import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
   title: "Road trip Portugal en van | Itinéraires et spots",
-  description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires, spots secrets, routes côtières et conseils de vanlifers pour une aventure inoubliable.",
+  description: "Organisez votre road trip au Portugal en van aménagé. Itinéraires, spots secrets et conseils de vanlifers pour une aventure inoubliable.",
   alternates: {
     canonical: "https://www.exploreportugalvan.com/road-trip-portugal-van/",
   },
@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Road trip Portugal en van | Itinéraires et spots",
     description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires et conseils de vanlifers.",
     url: "https://www.exploreportugalvan.com/road-trip-portugal-van/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/road-trip-portugal.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Road trip au Portugal en van aménagé sur la côte atlantique",
+      },
+    ],
   },
   twitter: {
     title: "Road trip Portugal en van | Itinéraires et spots",
     description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires et conseils de vanlifers.",
+    card: "summary_large_image",
+    images: ["https://www.exploreportugalvan.com/images/road-trip-portugal.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Road trip Portugal", href: "/road-trip-portugal-van" },
+  { name: "Road trip Portugal", href: "/road-trip-portugal-van/" },
 ];
 
 const schemaData = {
@@ -31,9 +44,10 @@ const schemaData = {
   "headline": "Road trip au Portugal en van",
   "description": "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires, spots secrets et conseils.",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "image": "https://www.exploreportugalvan.com/images/road-trip-portugal.jpg",
   "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "dateModified": "2025-01-20",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/road-trip-portugal-van/" }
 };
 

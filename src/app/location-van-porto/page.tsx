@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Location van Porto | Douro et nord du Portugal",
     description: "Louez un van à Porto : accès au Douro, Peneda-Gerês et au nord sauvage du Portugal.",
     url: "https://www.exploreportugalvan.com/location-van-porto/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/location-van-porto.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Location de van aménagé à Porto pour explorer le Douro et le nord",
+      },
+    ],
   },
   twitter: {
+    card: "summary_large_image",
     title: "Location van Porto | Douro et nord du Portugal",
     description: "Louez un van à Porto : accès au Douro, Peneda-Gerês et au nord sauvage du Portugal.",
+    images: ["https://www.exploreportugalvan.com/images/location-van-porto.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Location van Porto", href: "/location-van-porto" },
+  { name: "Location van Porto", href: "/location-van-porto/" },
 ];
 
 const schemaData = {
@@ -30,10 +43,11 @@ const schemaData = {
   "@type": "Article",
   "headline": "Location de van à Porto",
   "description": "Guide complet pour louer un van aménagé à Porto et explorer le nord du Portugal.",
+  "image": "https://www.exploreportugalvan.com/images/location-van-porto.jpg",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "datePublished": "2024-08-10",
+  "dateModified": "2025-01-18",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/location-van-porto/" }
 };
 

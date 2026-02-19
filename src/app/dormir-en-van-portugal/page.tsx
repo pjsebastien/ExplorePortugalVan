@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Dormir en van au Portugal | Aires et spots",
     description: "Aires officielles, campings et spots autorisés pour passer la nuit en van au Portugal.",
     url: "https://www.exploreportugalvan.com/dormir-en-van-portugal/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/dormir-van-portugal.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Où dormir en van au Portugal - Aires et spots autorisés",
+      },
+    ],
   },
   twitter: {
     title: "Dormir en van au Portugal | Aires et spots",
     description: "Aires officielles, campings et spots autorisés pour passer la nuit en van au Portugal.",
+    card: "summary_large_image",
+    images: ["https://www.exploreportugalvan.com/images/dormir-van-portugal.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Dormir en van", href: "/dormir-en-van-portugal" },
+  { name: "Dormir en van", href: "/dormir-en-van-portugal/" },
 ];
 
 const schemaData = {
@@ -31,9 +44,10 @@ const schemaData = {
   "headline": "Où dormir en van au Portugal",
   "description": "Guide complet des aires officielles, campings et spots pour dormir en van au Portugal.",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "image": "https://www.exploreportugalvan.com/images/dormir-van-portugal.jpg",
+  "datePublished": "2024-07-10",
+  "dateModified": "2025-02-01",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/dormir-en-van-portugal/" }
 };
 

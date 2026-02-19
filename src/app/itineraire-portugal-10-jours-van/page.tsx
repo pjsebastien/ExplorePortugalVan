@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Itinéraire Portugal 10 jours en van | Jour par jour",
     description: "Programme jour par jour pour 10 jours au Portugal en van : étapes, distances et spots où dormir.",
     url: "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/road-trip-portugal.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Itinéraire de 10 jours au Portugal en van de Lisbonne à l'Algarve",
+      },
+    ],
   },
   twitter: {
     title: "Itinéraire Portugal 10 jours en van | Jour par jour",
     description: "Programme jour par jour pour 10 jours au Portugal en van : étapes, distances et spots où dormir.",
+    card: "summary_large_image",
+    images: ["https://www.exploreportugalvan.com/images/road-trip-portugal.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Itinéraire 10 jours", href: "/itineraire-portugal-10-jours-van" },
+  { name: "Itinéraire 10 jours", href: "/itineraire-portugal-10-jours-van/" },
 ];
 
 const schemaData = {
@@ -31,9 +44,10 @@ const schemaData = {
   "headline": "Itinéraire 10 jours au Portugal en van",
   "description": "Programme jour par jour pour 10 jours de road trip au Portugal en van aménagé.",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "image": "https://www.exploreportugalvan.com/images/road-trip-portugal.jpg",
+  "datePublished": "2024-06-20",
+  "dateModified": "2025-01-25",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van/" }
 };
 

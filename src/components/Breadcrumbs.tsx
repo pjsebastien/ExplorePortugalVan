@@ -18,7 +18,7 @@ export default function Breadcrumbs({ items, variant = 'light' }: BreadcrumbsPro
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://www.exploreportugalvan.com${item.href}`
+      "item": `https://www.exploreportugalvan.com${item.href.endsWith('/') ? item.href : item.href + '/'}`
     }))
   };
 

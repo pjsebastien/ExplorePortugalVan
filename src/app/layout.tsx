@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.exploreportugalvan.com'),
   title: {
     default: "Location van Portugal | Comparez et réservez votre van aménagé",
-    template: "%s | ExplorePortugalVan",
+    template: "%s",
   },
   icons: {
     icon: '/images/favicon.png',
@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     apple: '/images/favicon.png',
   },
   description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs, itinéraires et astuces pour votre road trip sur la côte atlantique.",
-  keywords: ["location van Portugal", "van aménagé Portugal", "road trip Portugal", "louer van Portugal", "vanlife Portugal"],
   authors: [{ name: "ExplorePortugalVan" }],
   creator: "ExplorePortugalVan",
   publisher: "ExplorePortugalVan",

@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Location van Algarve | Plages et soleil depuis Faro",
     description: "Louez un van en Algarve depuis Faro : falaises dorées, grottes marines et 300 jours de soleil.",
     url: "https://www.exploreportugalvan.com/location-van-algarve/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/location-van-algarve.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Location de van en Algarve depuis Faro pour les plages du sud",
+      },
+    ],
   },
   twitter: {
+    card: "summary_large_image",
     title: "Location van Algarve | Plages et soleil depuis Faro",
     description: "Louez un van en Algarve depuis Faro : falaises dorées, grottes marines et 300 jours de soleil.",
+    images: ["https://www.exploreportugalvan.com/images/location-van-algarve.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Location van Algarve", href: "/location-van-algarve" },
+  { name: "Location van Algarve", href: "/location-van-algarve/" },
 ];
 
 const schemaData = {
@@ -30,10 +43,11 @@ const schemaData = {
   "@type": "Article",
   "headline": "Location de van en Algarve",
   "description": "Guide complet pour louer un van en Algarve depuis Faro et explorer les plus belles plages d'Europe.",
+  "image": "https://www.exploreportugalvan.com/images/location-van-algarve.jpg",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "datePublished": "2024-08-15",
+  "dateModified": "2025-01-22",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/location-van-algarve/" }
 };
 

@@ -12,6 +12,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.exploreportugalvan.com/politique-confidentialite/",
   },
+  openGraph: {
+    title: "Politique de confidentialité",
+    description: "Politique de confidentialité du site ExplorePortugalVan.com.",
+    url: "https://www.exploreportugalvan.com/politique-confidentialite/",
+    type: "website",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+  },
+  twitter: {
+    card: "summary",
+    title: "Politique de confidentialité",
+    description: "Politique de confidentialité du site ExplorePortugalVan.com.",
+  },
 };
 
 const breadcrumbs = [

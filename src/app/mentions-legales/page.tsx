@@ -12,6 +12,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.exploreportugalvan.com/mentions-legales/",
   },
+  openGraph: {
+    title: "Mentions légales",
+    description: "Mentions légales du site ExplorePortugalVan.com.",
+    url: "https://www.exploreportugalvan.com/mentions-legales/",
+    type: "website",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+  },
+  twitter: {
+    card: "summary",
+    title: "Mentions légales",
+    description: "Mentions légales du site ExplorePortugalVan.com.",
+  },
 };
 
 const breadcrumbs = [

@@ -13,16 +13,29 @@ export const metadata: Metadata = {
     title: "Camping sauvage Portugal | Loi, amendes et alternatives",
     description: "Réglementation du camping sauvage au Portugal : loi, amendes et alternatives légales pour les vanlifers.",
     url: "https://www.exploreportugalvan.com/camping-sauvage-portugal-van/",
+    type: "article",
+    locale: "fr_FR",
+    siteName: "ExplorePortugalVan",
+    images: [
+      {
+        url: "https://www.exploreportugalvan.com/images/camping-sauvage-portugal.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Réglementation du camping sauvage au Portugal pour les vanlifers",
+      },
+    ],
   },
   twitter: {
     title: "Camping sauvage Portugal | Loi, amendes et alternatives",
     description: "Réglementation du camping sauvage au Portugal : loi, amendes et alternatives légales pour les vanlifers.",
+    card: "summary_large_image",
+    images: ["https://www.exploreportugalvan.com/images/camping-sauvage-portugal.jpg"],
   },
 };
 
 const breadcrumbs = [
   { name: "Accueil", href: "/" },
-  { name: "Camping sauvage", href: "/camping-sauvage-portugal-van" },
+  { name: "Camping sauvage", href: "/camping-sauvage-portugal-van/" },
 ];
 
 const schemaData = {
@@ -31,9 +44,10 @@ const schemaData = {
   "headline": "Le camping sauvage au Portugal en van",
   "description": "Réglementation du camping sauvage au Portugal : loi en vigueur, amendes et alternatives légales.",
   "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-06-15",
-  "dateModified": "2025-02-15",
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan", "url": "https://www.exploreportugalvan.com/", "logo": { "@type": "ImageObject", "url": "https://www.exploreportugalvan.com/images/favicon.png" } },
+  "image": "https://www.exploreportugalvan.com/images/camping-sauvage-portugal.jpg",
+  "datePublished": "2024-07-15",
+  "dateModified": "2025-02-10",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/camping-sauvage-portugal-van/" }
 };
 
