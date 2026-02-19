@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Road trip Portugal en van | Itinéraires et spots incontournables",
+  title: "Road trip Portugal en van | Itinéraires et spots",
   description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires, spots secrets, routes côtières et conseils de vanlifers pour une aventure inoubliable.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/road-trip-portugal-van",
+    canonical: "https://www.exploreportugalvan.com/road-trip-portugal-van/",
+  },
+  openGraph: {
+    title: "Road trip Portugal en van | Itinéraires et spots",
+    description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires et conseils de vanlifers.",
+    url: "https://www.exploreportugalvan.com/road-trip-portugal-van/",
+  },
+  twitter: {
+    title: "Road trip Portugal en van | Itinéraires et spots",
+    description: "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires et conseils de vanlifers.",
   },
 };
 
@@ -16,9 +25,22 @@ const breadcrumbs = [
   { name: "Road trip Portugal", href: "/road-trip-portugal-van" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Road trip au Portugal en van",
+  "description": "Organisez votre road trip au Portugal en van aménagé. Les plus beaux itinéraires, spots secrets et conseils.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/road-trip-portugal-van/" }
+};
+
 export default function RoadTripPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero compact */}
       <section className="bg-gradient-to-r from-ocean-800 to-ocean-600 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -170,7 +192,7 @@ export default function RoadTripPage() {
           <div className="relative h-64 lg:h-auto rounded-xl overflow-hidden">
             <Image
               src="/images/location-van-algarve.jpg"
-              alt="Falaises de l'Algarve"
+              alt="Falaises dorées de l'Algarve vues depuis la côte lors d'un road trip en van"
               fill
               className="object-cover"
               sizes="400px"
@@ -323,7 +345,7 @@ export default function RoadTripPage() {
               <li className="flex items-center"><span className="w-2 h-2 bg-ocean-500 rounded-full mr-3"></span>Crème solaire et anti-moustiques</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-ocean-500 rounded-full mr-3"></span>Équipement de plage / snorkeling</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-ocean-500 rounded-full mr-3"></span>Vêtements en couches (nuits fraîches)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-ocean-500 rounded-full mr-3"></span>Application Park4Night</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-ocean-500 rounded-full mr-3"></span>Application <a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800">Park4Night</a></li>
             </ul>
             <div className="bg-ocean-50 rounded-lg p-4">
               <p className="text-sm text-ocean-800">

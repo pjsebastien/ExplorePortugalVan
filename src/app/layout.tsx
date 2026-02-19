@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import { Header, Footer, CookieBanner, FloatingCTA } from "@/components";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.exploreportugalvan.com'),
@@ -26,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://www.exploreportugalvan.com",
+    url: "https://www.exploreportugalvan.com/",
     siteName: "ExplorePortugalVan",
     title: "Location van Portugal | Comparez et réservez votre van aménagé",
     description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
@@ -57,7 +72,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.exploreportugalvan.com",
+    canonical: "https://www.exploreportugalvan.com/",
+    languages: {
+      "fr": "https://www.exploreportugalvan.com/",
+    },
   },
 };
 
@@ -67,8 +85,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body className="antialiased">
+    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+      <body className={`${inter.className} antialiased`}>
         <Header />
         <main className="pt-16 lg:pt-20">
           {children}

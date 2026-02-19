@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location van Porto | Explorez le Douro et le nord du Portugal",
+  title: "Location van Porto | Douro et nord du Portugal",
   description: "Louez un van aménagé à Porto pour découvrir le nord du Portugal et la vallée du Douro. Comparatif des loueurs, tarifs et accès depuis l'aéroport.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/location-van-porto",
+    canonical: "https://www.exploreportugalvan.com/location-van-porto/",
+  },
+  openGraph: {
+    title: "Location van Porto | Douro et nord du Portugal",
+    description: "Louez un van à Porto : accès au Douro, Peneda-Gerês et au nord sauvage du Portugal.",
+    url: "https://www.exploreportugalvan.com/location-van-porto/",
+  },
+  twitter: {
+    title: "Location van Porto | Douro et nord du Portugal",
+    description: "Louez un van à Porto : accès au Douro, Peneda-Gerês et au nord sauvage du Portugal.",
   },
 };
 
@@ -16,9 +25,22 @@ const breadcrumbs = [
   { name: "Location van Porto", href: "/location-van-porto" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Location de van à Porto",
+  "description": "Guide complet pour louer un van aménagé à Porto et explorer le nord du Portugal.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/location-van-porto/" }
+};
+
 export default function PortoPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-nature-700 to-nature-600 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -59,16 +81,16 @@ export default function PortoPage() {
             </div>
             <div className="lg:col-span-2 grid grid-cols-2 gap-2">
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-porto.jpg" alt="Porto" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-porto.jpg" alt="Vue sur le quartier Ribeira et le pont Dom Luís à Porto" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/road-trip-portugal.jpg" alt="Douro" fill className="object-cover" sizes="150px" />
+                <Image src="/images/road-trip-portugal.jpg" alt="Vignobles en terrasses de la vallée du Douro depuis une route panoramique" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/hero-portugal-van.jpg" alt="Van" fill className="object-cover" sizes="150px" />
+                <Image src="/images/hero-portugal-van.jpg" alt="Van aménagé garé face à l'océan Atlantique près de Porto" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/itineraire-portugal.jpg" alt="Route" fill className="object-cover" sizes="150px" />
+                <Image src="/images/itineraire-portugal.jpg" alt="Route sinueuse à travers les montagnes du nord du Portugal" fill className="object-cover" sizes="150px" />
               </div>
             </div>
           </div>

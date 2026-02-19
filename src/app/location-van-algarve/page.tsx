@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location van Algarve | Falaises, plages et soleil toute l'année",
+  title: "Location van Algarve | Plages et soleil depuis Faro",
   description: "Louez un van en Algarve depuis Faro et explorez les plus belles plages d'Europe. Falaises dorées, grottes marines et 300 jours de soleil par an.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/location-van-algarve",
+    canonical: "https://www.exploreportugalvan.com/location-van-algarve/",
+  },
+  openGraph: {
+    title: "Location van Algarve | Plages et soleil depuis Faro",
+    description: "Louez un van en Algarve depuis Faro : falaises dorées, grottes marines et 300 jours de soleil.",
+    url: "https://www.exploreportugalvan.com/location-van-algarve/",
+  },
+  twitter: {
+    title: "Location van Algarve | Plages et soleil depuis Faro",
+    description: "Louez un van en Algarve depuis Faro : falaises dorées, grottes marines et 300 jours de soleil.",
   },
 };
 
@@ -16,9 +25,22 @@ const breadcrumbs = [
   { name: "Location van Algarve", href: "/location-van-algarve" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Location de van en Algarve",
+  "description": "Guide complet pour louer un van en Algarve depuis Faro et explorer les plus belles plages d'Europe.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/location-van-algarve/" }
+};
+
 export default function AlgarvePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-sand-600 to-sand-500 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -59,16 +81,16 @@ export default function AlgarvePage() {
             </div>
             <div className="lg:col-span-2 grid grid-cols-2 gap-2">
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-algarve.jpg" alt="Algarve" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-algarve.jpg" alt="Falaises dorées et eaux turquoise de la côte de l'Algarve" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/camping-sauvage-portugal.jpg" alt="Plages" fill className="object-cover" sizes="150px" />
+                <Image src="/images/camping-sauvage-portugal.jpg" alt="Plage sauvage de la Costa Vicentina en Algarve" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/road-trip-portugal.jpg" alt="Road trip" fill className="object-cover" sizes="150px" />
+                <Image src="/images/road-trip-portugal.jpg" alt="Route côtière de l'Algarve idéale pour un road trip en van" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/dormir-van-portugal.jpg" alt="Van" fill className="object-cover" sizes="150px" />
+                <Image src="/images/dormir-van-portugal.jpg" alt="Van aménagé avec vue sur le coucher de soleil au Cap Saint-Vincent" fill className="object-cover" sizes="150px" />
               </div>
             </div>
           </div>

@@ -12,7 +12,8 @@
       "Bash(for f in *.jpg)",
       "Bash(do echo \"$f\")",
       "Bash(done)",
-      "Bash(powershell -Command \"Get-ChildItem -Path ''src/app'' -Recurse -Filter ''*.tsx'' | ForEach-Object { \\(Get-Content $_FullName\\) -replace '' href=\"\"#\"\"'', '''' | Set-Content $_FullName }\")"
+      "Bash(powershell -Command \"Get-ChildItem -Path ''src/app'' -Recurse -Filter ''*.tsx'' | ForEach-Object { \\(Get-Content $_FullName\\) -replace '' href=\"\"#\"\"'', '''' | Set-Content $_FullName }\")",
+      "Bash(git push:*)"
     ]
   }
 }

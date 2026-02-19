@@ -3,11 +3,14 @@ import Link from 'next/link';
 import { Section, Breadcrumbs } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Mentions légales - ExplorePortugalVan",
+  title: "Mentions légales",
   description: "Mentions légales du site ExplorePortugalVan.com - Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
   robots: {
     index: false,
     follow: false,
+  },
+  alternates: {
+    canonical: "https://www.exploreportugalvan.com/mentions-legales/",
   },
 };
 

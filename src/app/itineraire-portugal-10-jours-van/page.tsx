@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Itinéraire Portugal 10 jours en van | Du nord au sud, jour par jour",
+  title: "Itinéraire Portugal 10 jours en van | Jour par jour",
   description: "Notre itinéraire de 10 jours au Portugal en van : programme jour par jour, étapes incontournables, distances et spots où dormir de Lisbonne à l'Algarve.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van",
+    canonical: "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van/",
+  },
+  openGraph: {
+    title: "Itinéraire Portugal 10 jours en van | Jour par jour",
+    description: "Programme jour par jour pour 10 jours au Portugal en van : étapes, distances et spots où dormir.",
+    url: "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van/",
+  },
+  twitter: {
+    title: "Itinéraire Portugal 10 jours en van | Jour par jour",
+    description: "Programme jour par jour pour 10 jours au Portugal en van : étapes, distances et spots où dormir.",
   },
 };
 
@@ -15,6 +24,18 @@ const breadcrumbs = [
   { name: "Accueil", href: "/" },
   { name: "Itinéraire 10 jours", href: "/itineraire-portugal-10-jours-van" },
 ];
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Itinéraire 10 jours au Portugal en van",
+  "description": "Programme jour par jour pour 10 jours de road trip au Portugal en van aménagé.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/itineraire-portugal-10-jours-van/" }
+};
 
 const itinerary = [
   { day: 1, title: "Lisbonne - Sintra", distance: "30 km", description: "Récupération du van et découverte de Sintra (Palais de Pena, Quinta da Regaleira).", sleep: "Aire de Cascais" },
@@ -32,6 +53,7 @@ const itinerary = [
 export default function ItinerairePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-sand-600 to-sand-500 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -72,16 +94,16 @@ export default function ItinerairePage() {
             </div>
             <div className="lg:col-span-2 grid grid-cols-2 gap-2">
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-lisbonne.jpg" alt="Lisbonne" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-lisbonne.jpg" alt="Vue panoramique sur Lisbonne, point de départ de l'itinéraire en van" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-porto.jpg" alt="Porto" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-porto.jpg" alt="Quartier Ribeira à Porto, étape clé de l'itinéraire en van" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/itineraire-portugal.jpg" alt="Route Portugal" fill className="object-cover" sizes="150px" />
+                <Image src="/images/itineraire-portugal.jpg" alt="Route panoramique du Portugal traversant les paysages de l'intérieur" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-algarve.jpg" alt="Algarve" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-algarve.jpg" alt="Plages dorées de l'Algarve, dernière étape de l'itinéraire en van" fill className="object-cover" sizes="150px" />
               </div>
             </div>
           </div>

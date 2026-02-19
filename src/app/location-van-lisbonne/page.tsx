@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location van Lisbonne | Loueurs, tarifs et départ aéroport",
+  title: "Location van Lisbonne | Loueurs et départ aéroport",
   description: "Louez un van aménagé à Lisbonne : comparatif des loueurs, retrait à l'aéroport et avantages de partir de la capitale pour explorer le Portugal.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/location-van-lisbonne",
+    canonical: "https://www.exploreportugalvan.com/location-van-lisbonne/",
+  },
+  openGraph: {
+    title: "Location van Lisbonne | Loueurs et départ aéroport",
+    description: "Louez un van aménagé à Lisbonne : comparatif des loueurs et retrait à l'aéroport.",
+    url: "https://www.exploreportugalvan.com/location-van-lisbonne/",
+  },
+  twitter: {
+    title: "Location van Lisbonne | Loueurs et départ aéroport",
+    description: "Louez un van aménagé à Lisbonne : comparatif des loueurs et retrait à l'aéroport.",
   },
 };
 
@@ -16,9 +25,22 @@ const breadcrumbs = [
   { name: "Location van Lisbonne", href: "/location-van-lisbonne" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Location de van à Lisbonne",
+  "description": "Guide complet pour louer un van aménagé à Lisbonne : loueurs, tarifs et accès depuis l'aéroport.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/location-van-lisbonne/" }
+};
+
 export default function LisbonnePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-ocean-800 to-ocean-700 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -59,16 +81,16 @@ export default function LisbonnePage() {
             </div>
             <div className="lg:col-span-2 grid grid-cols-2 gap-2">
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-lisbonne.jpg" alt="Lisbonne" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-lisbonne.jpg" alt="Vue sur les toits colorés de Lisbonne depuis le quartier de l'Alfama" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/hero-portugal-van.jpg" alt="Van Portugal" fill className="object-cover" sizes="150px" />
+                <Image src="/images/hero-portugal-van.jpg" alt="Van aménagé garé face à l'océan Atlantique au Portugal" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/road-trip-portugal.jpg" alt="Road trip" fill className="object-cover" sizes="150px" />
+                <Image src="/images/road-trip-portugal.jpg" alt="Route côtière du Portugal idéale pour un road trip en van" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/itineraire-portugal.jpg" alt="Itinéraire" fill className="object-cover" sizes="150px" />
+                <Image src="/images/itineraire-portugal.jpg" alt="Carte des itinéraires en van au départ de Lisbonne vers le nord et le sud" fill className="object-cover" sizes="150px" />
               </div>
             </div>
           </div>

@@ -7,20 +7,35 @@ export const metadata: Metadata = {
   title: "Location van Portugal | Comparez et réservez votre van aménagé",
   description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs, itinéraires et astuces pour votre road trip sur la côte atlantique.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com",
+    canonical: "https://www.exploreportugalvan.com/",
+  },
+  openGraph: {
+    title: "Location van Portugal | Comparez et réservez votre van aménagé",
+    description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
+    url: "https://www.exploreportugalvan.com/",
+  },
+  twitter: {
+    title: "Location van Portugal | Comparez et réservez votre van aménagé",
+    description: "Louez un van aménagé au Portugal et partez à l'aventure. Comparatif des loueurs, tarifs et astuces pour votre road trip.",
   },
 };
 
-const schemaData = {
+const schemaWebsite = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Location de van au Portugal",
+  "@type": "WebSite",
+  "name": "ExplorePortugalVan",
+  "url": "https://www.exploreportugalvan.com/",
   "description": "Louez un van aménagé au Portugal. Comparatif des loueurs, tarifs, itinéraires et astuces pour votre road trip sur la côte atlantique.",
-  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
-  "datePublished": "2024-01-15",
-  "dateModified": "2025-01-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com" }
+  "inLanguage": "fr",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ExplorePortugalVan",
+    "url": "https://www.exploreportugalvan.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.exploreportugalvan.com/images/favicon.png"
+    }
+  }
 };
 
 export default function HomePage() {
@@ -28,7 +43,7 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
       />
 
       {/* Hero Section - Professional with grid images */}
@@ -365,7 +380,7 @@ export default function HomePage() {
               avec des tarifs allant de gratuit à 25€/nuit. De nombreux campings accueillent également les vans.
             </p>
             <p className="text-gray-600 mb-6">
-              L&apos;application <strong>Park4Night</strong> recense des milliers de spots vérifiés par la communauté vanlife.
+              L&apos;application <a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 font-semibold hover:text-ocean-800">Park4Night</a> recense des milliers de spots vérifiés par la communauté vanlife.
               Notre guide <InternalLink href="/dormir-en-van-portugal">Où dormir en van</InternalLink> détaille toutes les options légales.
             </p>
             <div className="flex gap-4">
@@ -402,7 +417,7 @@ export default function HomePage() {
                 <svg className="w-5 h-5 text-nature-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-700">Application Park4Night (recommandée)</span>
+                <span className="text-gray-700">Application <a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800">Park4Night</a> (recommandée)</span>
               </li>
             </ul>
             <div className="mt-6 p-4 bg-ocean-50 rounded-lg">

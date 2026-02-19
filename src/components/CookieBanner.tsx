@@ -29,7 +29,7 @@ export default function CookieBanner() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white border-t border-gray-200 shadow-lg">
+    <div role="dialog" aria-label="Gestion des cookies" className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white border-t border-gray-200 shadow-lg">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center gap-4">
           <div className="flex-grow">

@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Dormir en van au Portugal | Aires, spots et applications",
+  title: "Dormir en van au Portugal | Aires et spots",
   description: "Où passer la nuit en van au Portugal ? Aires officielles, campings, spots autorisés et meilleures applications pour trouver un endroit légal et sécurisé.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/dormir-en-van-portugal",
+    canonical: "https://www.exploreportugalvan.com/dormir-en-van-portugal/",
+  },
+  openGraph: {
+    title: "Dormir en van au Portugal | Aires et spots",
+    description: "Aires officielles, campings et spots autorisés pour passer la nuit en van au Portugal.",
+    url: "https://www.exploreportugalvan.com/dormir-en-van-portugal/",
+  },
+  twitter: {
+    title: "Dormir en van au Portugal | Aires et spots",
+    description: "Aires officielles, campings et spots autorisés pour passer la nuit en van au Portugal.",
   },
 };
 
@@ -16,9 +25,22 @@ const breadcrumbs = [
   { name: "Dormir en van", href: "/dormir-en-van-portugal" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Où dormir en van au Portugal",
+  "description": "Guide complet des aires officielles, campings et spots pour dormir en van au Portugal.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/dormir-en-van-portugal/" }
+};
+
 export default function DormirPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-ocean-700 to-ocean-600 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -59,16 +81,16 @@ export default function DormirPage() {
             </div>
             <div className="lg:col-span-2 grid grid-cols-2 gap-2">
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/dormir-van-portugal.jpg" alt="Dormir en van" fill className="object-cover" sizes="150px" />
+                <Image src="/images/dormir-van-portugal.jpg" alt="Van aménagé stationné pour la nuit avec vue sur le coucher de soleil au Portugal" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-algarve.jpg" alt="Aire camping" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-algarve.jpg" alt="Aire de camping-car officielle en Algarve avec vue sur les falaises" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-porto.jpg" alt="Porto" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-porto.jpg" alt="Aire de stationnement pour van près de Porto avec vue sur l'océan" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/camping-sauvage-portugal.jpg" alt="Nature Portugal" fill className="object-cover" sizes="150px" />
+                <Image src="/images/camping-sauvage-portugal.jpg" alt="Spot nature pour van au Portugal dans un cadre préservé" fill className="object-cover" sizes="150px" />
               </div>
             </div>
           </div>
@@ -96,9 +118,9 @@ export default function DormirPage() {
           <div className="bg-ocean-50 rounded-xl p-5">
             <h3 className="font-semibold text-gray-900 mb-3">Applications essentielles</h3>
             <ul className="text-sm text-gray-600 space-y-2">
-              <li><strong>Park4Night</strong> - La référence vanlife</li>
-              <li><strong>iOverlander</strong> - Spots communautaires</li>
-              <li><strong>Campercontact</strong> - Aires officielles</li>
+              <li><a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800"><strong>Park4Night</strong></a> - La référence vanlife</li>
+              <li><a href="https://www.ioverlander.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800"><strong>iOverlander</strong></a> - Spots communautaires</li>
+              <li><a href="https://www.campercontact.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800"><strong>Campercontact</strong></a> - Aires officielles</li>
               <li><strong>Google Maps offline</strong> - Navigation sans réseau</li>
             </ul>
           </div>
@@ -254,7 +276,7 @@ export default function DormirPage() {
               <li>Parkings de supermarchés (avec accord du gérant)</li>
               <li>Parkings de restaurants (consommation appréciée)</li>
               <li>Zones industrielles calmes</li>
-              <li>Spots référencés sur Park4Night avec bons avis</li>
+              <li>Spots référencés sur <a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800">Park4Night</a> avec bons avis</li>
             </ul>
           </div>
         </div>
@@ -272,7 +294,7 @@ export default function DormirPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-xl font-semibold mb-2">Park4Night</h3>
+            <h3 className="text-xl font-semibold mb-2"><a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="hover:text-ocean-600">Park4Night ↗</a></h3>
             <p className="text-gray-600 text-sm mb-3">
               La référence pour les vanlifers. Des milliers de spots recensés avec photos,
               avis et services disponibles. Indispensable au Portugal.
@@ -280,7 +302,7 @@ export default function DormirPage() {
             <span className="text-xs text-nature-600 font-medium bg-nature-50 px-2 py-1 rounded">Gratuit / Premium</span>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-xl font-semibold mb-2">iOverlander</h3>
+            <h3 className="text-xl font-semibold mb-2"><a href="https://www.ioverlander.com/" target="_blank" rel="noopener noreferrer" className="hover:text-ocean-600">iOverlander ↗</a></h3>
             <p className="text-gray-600 text-sm mb-3">
               Application communautaire mondiale avec spots vérifiés. Moins fournie que
               Park4Night au Portugal mais complémentaire.
@@ -288,7 +310,7 @@ export default function DormirPage() {
             <span className="text-xs text-nature-600 font-medium bg-nature-50 px-2 py-1 rounded">Gratuit</span>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-xl font-semibold mb-2">Campercontact</h3>
+            <h3 className="text-xl font-semibold mb-2"><a href="https://www.campercontact.com/" target="_blank" rel="noopener noreferrer" className="hover:text-ocean-600">Campercontact ↗</a></h3>
             <p className="text-gray-600 text-sm mb-3">
               Spécialisée dans les aires de camping-car officielles. Informations précises
               sur les services et tarifs.
@@ -308,7 +330,7 @@ export default function DormirPage() {
         <div className="bg-sand-50 border-l-4 border-sand-500 p-6">
           <h4 className="font-semibold text-sand-800 mb-2">Conseil</h4>
           <p className="text-sand-800">
-            Consultez les avis récents sur Park4Night. La réglementation ayant évolué,
+            Consultez les avis récents sur <a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:text-sand-600">Park4Night</a>. La réglementation ayant évolué,
             certains spots autrefois tolérés ne le sont plus. Filtrez par date
             pour avoir des informations actualisées.
           </p>

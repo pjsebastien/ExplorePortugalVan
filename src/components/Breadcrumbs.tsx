@@ -50,12 +50,12 @@ export default function Breadcrumbs({ items, variant = 'light' }: BreadcrumbsPro
           {items.map((item, index) => (
             <li key={item.href} className="flex items-center">
               {index > 0 && (
-                <svg className={`w-4 h-4 mx-2 ${style.icon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" className={`w-4 h-4 mx-2 ${style.icon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               )}
               {index === items.length - 1 ? (
-                <span className={style.current}>{item.name}</span>
+                <span aria-current="page" className={style.current}>{item.name}</span>
               ) : (
                 <Link href={item.href} className={`${style.hover} transition-colors`}>
                   {item.name}

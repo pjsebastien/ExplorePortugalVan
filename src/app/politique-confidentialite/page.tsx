@@ -3,11 +3,14 @@ import Link from 'next/link';
 import { Section, Breadcrumbs } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité - ExplorePortugalVan",
+  title: "Politique de confidentialité",
   description: "Politique de confidentialité du site ExplorePortugalVan.com - Informations sur la collecte et le traitement des données personnelles.",
   robots: {
     index: false,
     follow: false,
+  },
+  alternates: {
+    canonical: "https://www.exploreportugalvan.com/politique-confidentialite/",
   },
 };
 

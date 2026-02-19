@@ -3,10 +3,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Location van Portugal : toutes vos questions, nos réponses",
+  title: "FAQ location van Portugal | Vos questions, nos réponses",
   description: "Permis, assurance, budget, camping, meilleure période... Toutes les réponses à vos questions sur la location de van au Portugal.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/faq-location-van-portugal",
+    canonical: "https://www.exploreportugalvan.com/faq-location-van-portugal/",
+  },
+  openGraph: {
+    title: "FAQ location van Portugal | Vos questions, nos réponses",
+    description: "Toutes les réponses à vos questions sur la location de van au Portugal : permis, budget, camping.",
+    url: "https://www.exploreportugalvan.com/faq-location-van-portugal/",
+  },
+  twitter: {
+    title: "FAQ location van Portugal | Vos questions, nos réponses",
+    description: "Toutes les réponses à vos questions sur la location de van au Portugal : permis, budget, camping.",
   },
 };
 

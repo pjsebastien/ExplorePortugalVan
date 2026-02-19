@@ -4,10 +4,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Camping sauvage au Portugal | Loi, amendes et alternatives",
+  title: "Camping sauvage Portugal | Loi, amendes et alternatives",
   description: "Le camping sauvage est-il autorisé au Portugal ? Loi en vigueur, montant des amendes, zones interdites et alternatives légales pour bivouaquer en van.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/camping-sauvage-portugal-van",
+    canonical: "https://www.exploreportugalvan.com/camping-sauvage-portugal-van/",
+  },
+  openGraph: {
+    title: "Camping sauvage Portugal | Loi, amendes et alternatives",
+    description: "Réglementation du camping sauvage au Portugal : loi, amendes et alternatives légales pour les vanlifers.",
+    url: "https://www.exploreportugalvan.com/camping-sauvage-portugal-van/",
+  },
+  twitter: {
+    title: "Camping sauvage Portugal | Loi, amendes et alternatives",
+    description: "Réglementation du camping sauvage au Portugal : loi, amendes et alternatives légales pour les vanlifers.",
   },
 };
 
@@ -16,9 +25,22 @@ const breadcrumbs = [
   { name: "Camping sauvage", href: "/camping-sauvage-portugal-van" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Le camping sauvage au Portugal en van",
+  "description": "Réglementation du camping sauvage au Portugal : loi en vigueur, amendes et alternatives légales.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/camping-sauvage-portugal-van/" }
+};
+
 export default function CampingSauvagePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-red-700 to-red-600 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -62,16 +84,16 @@ export default function CampingSauvagePage() {
             </div>
             <div className="lg:col-span-2 grid grid-cols-2 gap-2">
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/camping-sauvage-portugal.jpg" alt="Nature Portugal" fill className="object-cover" sizes="150px" />
+                <Image src="/images/camping-sauvage-portugal.jpg" alt="Paysage naturel du Portugal avec végétation côtière préservée" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/location-van-algarve.jpg" alt="Algarve" fill className="object-cover" sizes="150px" />
+                <Image src="/images/location-van-algarve.jpg" alt="Falaises de l'Algarve où le camping sauvage est strictement interdit" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/dormir-van-portugal.jpg" alt="Van Portugal" fill className="object-cover" sizes="150px" />
+                <Image src="/images/dormir-van-portugal.jpg" alt="Van aménagé garé sur une aire légale au coucher du soleil au Portugal" fill className="object-cover" sizes="150px" />
               </div>
               <div className="relative h-28 rounded-lg overflow-hidden">
-                <Image src="/images/itineraire-portugal.jpg" alt="Route Portugal" fill className="object-cover" sizes="150px" />
+                <Image src="/images/itineraire-portugal.jpg" alt="Route panoramique du Portugal menant vers les aires de camping autorisées" fill className="object-cover" sizes="150px" />
               </div>
             </div>
           </div>
@@ -115,7 +137,7 @@ export default function CampingSauvagePage() {
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Ce que dit la loi</h3>
             <p className="text-gray-700 mb-4">
-              Le décret-loi n° 310/2002 et ses modifications ultérieures définissent le cadre légal
+              Le <a href="https://pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2541&tabela=leis&ficha=1&pagina=1" target="_blank" rel="noopener noreferrer" className="text-ocean-600 underline hover:text-ocean-800">décret-loi n° 310/2002</a> et ses modifications ultérieures définissent le cadre légal
               du camping au Portugal. En substance :
             </p>
             <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-1">
@@ -270,7 +292,7 @@ export default function CampingSauvagePage() {
             </p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-xl font-semibold mb-3">Spots Park4Night</h3>
+            <h3 className="text-xl font-semibold mb-3">Spots <a href="https://www.park4night.com/" target="_blank" rel="noopener noreferrer" className="text-ocean-600 hover:text-ocean-800">Park4Night</a></h3>
             <p className="text-gray-600 text-sm mb-3">
               La communauté référence les spots où le stationnement nocturne reste toléré.
               Vérifiez les avis récents.

@@ -3,10 +3,19 @@ import Link from 'next/link';
 import { AffiliateCTA, Section, Breadcrumbs, InternalLink } from '@/components';
 
 export const metadata: Metadata = {
-  title: "Prix location van Portugal | Tarifs, comparatif et budget",
+  title: "Prix location van Portugal | Tarifs et budget",
   description: "Combien coûte la location d'un van au Portugal ? Comparatif des tarifs par saison, type de véhicule et astuces pour économiser sur votre road trip.",
   alternates: {
-    canonical: "https://www.exploreportugalvan.com/prix-location-van-portugal",
+    canonical: "https://www.exploreportugalvan.com/prix-location-van-portugal/",
+  },
+  openGraph: {
+    title: "Prix location van Portugal | Tarifs et budget",
+    description: "Comparatif des tarifs de location de van au Portugal par saison et type de véhicule.",
+    url: "https://www.exploreportugalvan.com/prix-location-van-portugal/",
+  },
+  twitter: {
+    title: "Prix location van Portugal | Tarifs et budget",
+    description: "Comparatif des tarifs de location de van au Portugal par saison et type de véhicule.",
   },
 };
 
@@ -15,9 +24,22 @@ const breadcrumbs = [
   { name: "Prix location van", href: "/prix-location-van-portugal" },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Prix de la location de van au Portugal",
+  "description": "Comparatif des tarifs de location de van au Portugal par saison, type de véhicule et durée.",
+  "author": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "publisher": { "@type": "Organization", "name": "ExplorePortugalVan" },
+  "datePublished": "2024-06-15",
+  "dateModified": "2025-02-15",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.exploreportugalvan.com/prix-location-van-portugal/" }
+};
+
 export default function PrixPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Hero pro */}
       <section className="bg-gradient-to-r from-nature-700 to-nature-600 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
